@@ -54,6 +54,13 @@
     <artifactId>extentreports</artifactId>
     <version>5.0.9</version>
     <scope>compile</scope>
+
+    <exclusions>
+        <exclusion>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </exclusion>
+    </exclusions>
 </dependency>
 
     <!-- Source: https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
