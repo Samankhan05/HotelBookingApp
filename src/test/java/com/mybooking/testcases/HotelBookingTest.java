@@ -16,13 +16,22 @@ import org.testng.annotations.Test;
 
 import com.mybooking.pageobjects.HotelBooking;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.testng.annotations.Listeners;
+import com.mybooking.listeners.TestListener;
 
-public class HotelBookinTest {
+@Listeners(TestListener.class)
+public class HotelBookingTest {
+
 
 	WebDriver driver;
+	
+	public WebDriver getDriver() {
+	    return driver;
+	}
 
 	@BeforeMethod
 	public void Setup() {
+		
 
 //	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
@@ -80,5 +89,4 @@ public class HotelBookinTest {
 	public void teardown() {
 		driver.quit();
 	}
-
 }
