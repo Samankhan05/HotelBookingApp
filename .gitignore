@@ -6,6 +6,15 @@
 # Maven
 target/
 
+# Test reports
+reports/
+test-output/
+effective-pom
+effective-pom.xml
+
+# Compiled files
+*.class
+
 # TestNG
 test-output/
 
