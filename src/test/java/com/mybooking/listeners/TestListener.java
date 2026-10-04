@@ -22,8 +22,6 @@ public class TestListener implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
     	
-    	System.out.println("========== EXTENT LISTENER STARTED ==========");
-
         ExtentTest extentTest =
                 extent.createTest(result.getMethod().getMethodName());
 
